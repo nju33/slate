@@ -1,0 +1,8 @@
+version: '2'
+services:
+  doc:
+    build: .
+    ports:
+      - 4567:4567
+    volumes:
+      - ./source:/usr/src/app/source
