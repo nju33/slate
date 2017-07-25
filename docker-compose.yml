@@ -1,8 +1,13 @@
 version: '2'
 services:
-  doc:
+  dev:
     build: .
     ports:
-      - 4567:4567
+      - 3000:3000
     volumes:
       - ./source:/usr/src/app/source
+  build:
+    extends: dev
+    command: build
+    volumes:
+      - ./build:/usr/src/app/build

@@ -10,6 +10,30 @@
 
 <p align="center"><em>The example above was created with Slate. Check it out at <a href="https://lord.github.io/slate">lord.github.io/slate</a>.</em></p>
 
+環境
+------------
+
+### 記事を書くなら
+
+以下で開発サーバーを立てる。
+
+```bash
+docker-compose down && docker-compose build && docker-compose up -d
+```
+
+### ドキュメントを書く
+
+`source/`にある`index.html.md`や、新しく作る場合は`source/foo.html.md`のようなファイルを作って書く。これらは、`localhost:3000`や`localhost:3000/foo`でアクセスできる。
+
+### ビルドする
+
+これだけ。
+
+```bash
+# ビルドされているものとして
+docker-compose run build
+```
+
 Features
 ------------
 
